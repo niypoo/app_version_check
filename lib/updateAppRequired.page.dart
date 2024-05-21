@@ -14,7 +14,8 @@ class AppUpdateRequiredPage extends StatelessWidget {
     return PopScope(
       canPop: false,
       onPopInvoked: (didPop) async {
-        return;
+        if(didPop) return ;
+        return ;
       },
       child: FlyScaffold.padding(
         child: const FlyLayoutResponsiveView(
