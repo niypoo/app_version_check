@@ -15,16 +15,14 @@ class AppUpdateRequiredPage extends StatelessWidget {
       canPop: false,
       child: FlyScaffold.padding(
         child: const FlyLayoutResponsiveView(
-          portrait: SingleChildScrollView(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                AppUpdateIcon(),
-                AppUpdateTitle(),
-                AppUpdateDescription(),
-              ],
-            ),
+          portrait: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              AppUpdateIcon(),
+              AppUpdateTitle(),
+              AppUpdateDescription(),
+            ],
           ),
           landscape: FlyLandscapeView(
             childA: Center(child: AppUpdateIcon()),
@@ -88,10 +86,10 @@ class AppUpdateIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 20.sp),
+      padding: EdgeInsets.only(bottom: 10.sp),
       child: Icon(
         UniconsLine.arrow_circle_up,
-        size: 50.sp,
+        size: 70.sp,
       ),
     );
   }
