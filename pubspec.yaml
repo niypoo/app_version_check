@@ -1,0 +1,26 @@
+name: app_version_check
+description: "A new Flutter module project."
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  get: ^4.6.6
+  fly_ui:
+    git: 
+      url: git@github.com:niypoo/fly_ui.git
+  app_configuration_service:
+    git: 
+      url: git@github.com:niypoo/app_configuration_service.git
+  firebase_remote_config_service:
+    git: 
+      url: git@github.com:niypoo/firebase_remote_config_service.git
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
