@@ -11,8 +11,11 @@ class AppUpdateRequiredPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async => false,
+    return PopScope(
+      canPop: false,
+      onPopInvoked: (didPop) async {
+        return;
+      },
       child: FlyScaffold.padding(
         child: const FlyLayoutResponsiveView(
           portrait: Column(
