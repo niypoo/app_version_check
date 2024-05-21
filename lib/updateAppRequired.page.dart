@@ -54,7 +54,7 @@ class AppUpdateDescription extends StatelessWidget {
       'AppVersionCheck.The app is outdated, Please update to the latest version to continue.'
           .tr,
       style: Get.textTheme.titleSmall!.copyWith(
-        fontSize: 9.sp,
+        fontSize: 10.sp,
       ),
       textAlign: TextAlign.center,
     );
@@ -71,12 +71,11 @@ class AppUpdateTitle extends StatelessWidget {
     return Text(
       'AppVersionCheck.Update Required'.tr,
       style: Get.textTheme.titleLarge!.copyWith(
-        fontSize: 11.sp,
+        fontSize: 13.sp,
         color: Get.theme.primaryColor,
         fontWeight: FontWeight.bold,
       ),
       textAlign: TextAlign.center,
-      maxLines: 2,
     );
   }
 }
@@ -89,10 +88,10 @@ class AppUpdateIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(bottom: 10.sp),
+      padding: EdgeInsets.symmetric(vertical: 20.sp),
       child: Icon(
         UniconsLine.arrow_circle_up,
-        size: 20.sp,
+        size: 50.sp,
       ),
     );
   }
