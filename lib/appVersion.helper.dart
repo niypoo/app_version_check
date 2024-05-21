@@ -4,7 +4,7 @@ import 'package:firebase_remote_config_service/remoteConfig.service.dart';
 import 'package:get/get.dart';
 
 class AppVersionCheck {
-  static check() {
+  static Future<void> check() async {
     // get version from server
     final double versionFromServer =
         RemoteConfigService.to.getDouble('version');
@@ -17,5 +17,7 @@ class AppVersionCheck {
       // show message page
       return Get.to(const AppUpdateRequiredPage());
     }
+
+    return;
   }
 }
