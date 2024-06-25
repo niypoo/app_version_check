@@ -15,7 +15,7 @@ class AppVersionCheck {
     // check
     if (versionFromServer > appVersion) {
       // show message page
-      return Get.to(const AppUpdateRequiredPage());
+      return Get.to(() => const AppUpdateRequiredPage());
     }
 
     return;
